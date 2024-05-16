@@ -193,17 +193,6 @@ function App() {
           Scroll to active video 👇
         </button>
 
-        <button
-          onClick={() => {
-            const video = document.getElementById("videoElement") as HTMLVideoElement
-            video.pause()
-            window.open("https://www.youtube.com/results?search_query=" + title + " synthesia")
-          }}
-          className='scrollToActive'
-        >
-          Search for synthesia videos
-        </button>
-
         <p className='video-count'>
           {filteredVideos.length === 0 ? "Finns iiiige" : filteredVideos.length + ` / ${videos.length}`}
         </p>

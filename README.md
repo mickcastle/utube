@@ -10,7 +10,6 @@ This is a simple mp4 player that can play mp4 files from the local storage. It i
 - Filter videos by name by typing anywhere in the app as it is focused on keydown event
 - Scroll pretty much anywhere on the page to scroll the video list
 - Click on the video name to play the video
-- As I use this for music primarily and I'm learning how to play the piano I added a button to search for the music on youtube with "Synthesia" in the search query to find the piano tutorials
 
 ## How to use
 
