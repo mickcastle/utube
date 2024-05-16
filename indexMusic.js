@@ -1,6 +1,6 @@
 // index all file names in src/assets
 import fs, { readdirSync } from "fs"
-import path, { join } from "path"
+import path, { join, relative } from "path"
 import JSONbig from "json-bigint"
 
 let __dirname = path.resolve()
@@ -13,10 +13,11 @@ videos.forEach((video, index) => {
   const videoPath = join(videoDirectory, video)
   const dotIndex = video.lastIndexOf(".")
   const title = video.substring(0, dotIndex).replace(/'/g, "")
+  const localPath = relative(__dirname, videoPath).replace("public\\", "").replace("\\", "/")
 
   listOfTitlesAndPaths[index] = {
     title,
-    localPath: videoPath,
+    localPath,
   }
 })
 
