@@ -1,27 +1,21 @@
-# React + TypeScript + Vite
+# Localized mp4 player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple mp4 player that can play mp4 files from the local storage. It is built using Vite and HTML5 video player.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Play mp4 files from local storage
+- Navigator key bindings for play/pause, volume up/down, next/previous video
+- Responsive design
+- Filter videos by name by typing anywhere in the app as it is focused on keydown event
+- Scroll pretty much anywhere on the page to scroll the video list
+- Click on the video name to play the video
+- As I use this for music primarily and I'm learning how to play the piano I added a button to search for the music on youtube with "Synthesia" in the search query to find the piano tutorials
 
-## Expanding the ESLint configuration
+## How to use
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Clone the repository
+- Run `yarn install`
+- Create an assets folder in `public` and add your mp4 files there
+- Run `node indexMusic.js` to create the index.json file which will be used to list the videos
+- Run `yarn start` to start the server
