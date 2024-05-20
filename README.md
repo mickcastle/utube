@@ -1,4 +1,4 @@
-# Localized mp4 player
+# Locally hosted mp4 player
 
 This is a simple mp4 player that can play mp4 files from the local storage. It is built using Vite and HTML5 video player.
 
